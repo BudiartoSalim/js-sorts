@@ -1,5 +1,5 @@
 const fs = require('fs');
-let data = JSON.parse(fs.readFileSync('./datas/unsorted/random.json', 'utf-8'));
+let data = JSON.parse(fs.readFileSync('./data/datasets/random.json', 'utf-8'));
 
 console.time("Finishes sorting in");
 let sorted = quicksortIterative(data);

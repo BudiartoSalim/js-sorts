@@ -4,8 +4,9 @@
   "description": "Practice algorithm for all sort of sorts ;)",
   "main": "arraygen.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "seed": "node arraygen.js"
+    "createdir": "mkdir data/datasets",
+    "seed": "node ./seeder/arraygen.js",
+    "test": "node sortchecker.js"
   },
   "repository": {
     "type": "git",
