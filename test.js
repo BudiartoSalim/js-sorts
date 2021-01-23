@@ -1,8 +1,10 @@
-function createAdder(x) {
-  return function (y) { return x + y };
-}
+let items = [1, 4, 2, 3, 6, 8, 9, 9, 0, 10, 35, 5, 3]
+let stack = [];
+let low = 0;
+let high = items.length - 1;
+stack.push([low, high]);
+let range = stack.pop();
 
-const add3 = createAdder(3);
+let newitem = items.pop();
 
-const output = add3(1000);
-console.log(output);
+console.log(newitem)
