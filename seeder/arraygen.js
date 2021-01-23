@@ -20,6 +20,11 @@ function createAlmostSorted(arr) {
       arr[randomIndex2] = temp;
     }
   }
+  // extra manual assignment to make sure the created array always almost sorted in case random gives sorted
+  arr[30] = 1000000;
+  arr[394] = 30394;
+  arr[3] = 44;
+
   return arr;
 }
 
