@@ -5,7 +5,7 @@ console.time("Finishes sorting in");
 let sorted = quicksortIterative(data);
 console.timeEnd("Finishes sorting in");
 
-fs.writeFileSync('./datas/results.json', JSON.stringify(sorted, null, 2));
+fs.writeFileSync('./data/results.json', JSON.stringify(sorted, null, 2));
 
 
 function quicksortIterative(arr) {
