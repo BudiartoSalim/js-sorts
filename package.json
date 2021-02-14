@@ -4,7 +4,7 @@
   "description": "Practice algorithm for all sort of sorts ;)",
   "main": "arraygen.js",
   "scripts": {
-    "createdir": "mkdir data/datasets",
+    "createdir": "mkdir data && mkdir data/datasets",
     "seed": "node ./seeder/arraygen.js",
     "test": "node sortchecker.js"
   },
